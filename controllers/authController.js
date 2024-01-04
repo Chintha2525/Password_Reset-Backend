@@ -25,7 +25,7 @@ class authController {
             expiresIn: "10m",
           });
 
-          const link = `http://localhost:7000/api/auth/verify/${token}`;
+          const link = `https://password-reset-vznk.onrender.com/api/auth/verify/${token}`;
 
           sendEmailtoUser(link, email);
           // save the user
@@ -132,7 +132,7 @@ class authController {
             expiresIn: "5m",
           });
 
-          const link = `http://localhost:3000/user/reset/${isUser._id}/${token}`;
+          const link = `https://password-reset-2525.netlify.app/user/reset/${isUser._id}/${token}`;
 
           // email sending
           const transport = nodemailer.createTransport({
